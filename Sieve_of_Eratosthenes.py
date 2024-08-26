@@ -7,9 +7,6 @@ def sieve_of_eratosthenes(limit):
             for i in range(p * p, limit + 1, p):
                 primes[i] = False
         p += 1
-        print(primes)
+        #print(primes)
     return [p for p in range(2, limit + 1) if primes[p]]
-if sieve_of_eratosthenes(int(input())):
-    print("prime")
-else:
-    print("not prime")
+print(sieve_of_eratosthenes(int(input()))
